@@ -1,0 +1,81 @@
+@import "../../config/variable.scss";
+
+.setting-screen-wrapper {
+    .fs-12 {
+        font-size: 12px;
+    }
+
+    .authentication {
+        font-size: 14px;
+        color: red;
+    }
+
+    .main-wraper-setting {
+        height: calc(100vh - 118px);
+        background-color: rgba(237, 237, 246, 0.4) !important;
+        border-radius: 20px;
+
+        .btn-1 {
+            background-color: $primary;
+            border: 1px solid $primary;
+
+            &:active {
+                color: $white;
+                background-color: $primary;
+                border-color: 1px solid $primary;
+            }
+        }
+
+        .profile-img-wrapper {
+            .profileimgWrap {
+                width: 160px;
+                height: 160px;
+            }
+            .uploadImg{
+                position: absolute;
+                bottom: 0;
+                right: 22px;
+                cursor: pointer;
+            }
+        }
+
+        .form-group {
+            border: 1px solid #ced4da;
+            padding: 3px;
+            border-radius: 6px;
+            width: 100%;
+
+            @media (max-width:567px) {
+                width: 100%;
+            }
+        }
+
+        .form-group:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        }
+
+        .form-group input {
+            display: inline-block;
+            width: auto;
+            border: none;
+        }
+
+        .form-group input:focus {
+            box-shadow: none;
+        }
+
+        .country-code {
+            font-size: 16px;
+        }
+
+        .buttons-end {
+            position: absolute;
+            right: 47px;
+            bottom: 49px;
+        }
+    }
+}

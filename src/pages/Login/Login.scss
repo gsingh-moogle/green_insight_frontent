@@ -1,0 +1,209 @@
+
+
+// body {
+//     font-family: Arial !important;
+// }
+
+@import "../../config/variable.scss";
+
+.left-side-wrapper {
+    background-color: $primary;
+
+    .left-logo {
+        position: relative;
+        z-index: 2;
+    }
+
+    .login-map {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width: 767px) {
+            height: auto;
+        }
+    }
+}
+
+.login {
+    height: 100vh;
+}
+
+// .login-map img{
+//     max-width: 60%;
+// }
+.login-heading {
+    // font-family: 'Arial';
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    color: $white;
+}
+
+.right-side-wrapper h4 {
+    font-weight: 800;
+    color: #434343;
+    // font-family: 'Arial';
+}
+
+.right-side-wrapper {
+    form {
+        .form-check-label {
+            font-size: 16px;
+        }
+    }
+}
+
+.right-side-wrapper p {
+    color: #5C5C5C;
+    // font-family: 'Arial';
+}
+
+.password-icon {
+    left: 15px;
+    top: 30%;
+}
+
+.right-side-wrapper .btn-green {
+    background-color: $primary;
+    color: $white;
+    font-weight: 600;
+}
+
+.forger-pass {
+    color: $primary;
+    font-weight: 500;
+}
+
+.forger-pass:hover {
+    color: $primary;
+    font-weight: 500;
+}
+
+.checkbox .form-check-input:checked {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.checkbox .form-check-input:focus {
+    border-color: $primary;
+    outline: 0;
+    box-shadow: none;
+}
+
+.mail input::placeholder {
+    color: #5C5C5C;
+}
+
+.create-accnt a {
+    color: #5C5C5C;
+}
+
+.create-accnt a span {
+    color: $primary;
+}
+
+.create-accnt a:hover {
+    color: #5C5C5C;
+}
+
+.mail .form-control:focus {
+    color: #212529;
+    background-color: $white;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.right-side-wrapper .btn-green:hover {
+    background-color: $primary;
+    color: $white;
+    font-weight: 600;
+}
+
+.right-side-wrapper .btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.border-modal-login {
+    border-bottom: transparent !important;
+}
+
+.border-bottom-modal {
+    border-top: transparent !important;
+
+    button {
+        background-color: $primary !important;
+        border: 1px solid $primary;
+    }
+}
+
+.error-code {
+    font-size: 16px;
+    color: red;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.modal {
+    --bs-modal-width: 480px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .left-side-wrapper {
+        height: auto;
+    }
+
+    .login-heading {
+        // font-family: 'Arial';
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 78px;
+        color: $white;
+    }
+}
+.general-mills{
+    border: 1px solid #215154;
+    padding: 138px;
+    background: #215154;
+    color: #fff;
+    border-radius: 9px;
+    .login-heading{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+}
+.bucketWrapper{
+    .right-side-wrapper{
+        height: calc(100vh - 94px);
+    }
+    .upload-btn{
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: $primary;
+    }
+}
+.bucket-login{
+    .left-side-wrapper .login-map {
+        height: calc(100vh - 150px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,119 @@
+@import "../../config/variable.scss";
+
+.regional-wrapper .regional-h-wrapper .regional-heading .yearly-input.form-select {
+    width: 200px;
+
+    @media (max-width: 1200px) {
+        width: 170px;
+    }
+}
+.carrierComparision-img{
+    display: inline-block;
+    border: 1px solid #c1d3c0;
+}
+.border-right-green{
+    border-right: 1px solid #c1d3c0;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+.fs-18{
+    font-size: 18px;
+}
+.search-icon-img{
+    position: relative;
+    img{
+        position: absolute;
+        left: 14px;
+        top: 10px;
+        z-index: 1;
+        cursor: pointer;
+        @media (max-width: 768px){
+            top: 17px;
+        }
+    }
+    
+   
+}
+.search-icon-img:first-child img{
+    @media (max-width: 768px){
+        left: 8px;
+    }
+}
+.carrire-search-dropdown {
+    div{
+        font-size: 14px;
+        color: $primary;
+        padding-left: 9px;
+    }
+    .css-13cymwt-control, .css-t3ipsp-control {
+        width: 220px;
+        border-radius: 4px;
+        height: 34px;
+        min-height: 34px;
+
+        .css-1fdsijx-ValueContainer {
+            font-size: 14px;
+
+            .css-1jqq78o-placeholder {
+                color: $primary;
+                font-weight: 400;
+            }
+        }
+
+        .css-1dimb5e-singleValue {
+            color: $primary;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.compare-btn {
+    button {
+        border: 1px solid $primary;
+        background: $primary;
+        color: $white;
+        font-size: 16px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 4px 8px;
+    }
+
+    .disabled-button {
+        border: 1px solid #b1b1b1;
+        background: #b1b1b1;
+        color: gray;
+        font-size: 16px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 4px 8px;
+    }
+}
+
+.no-dataCard {
+    height: 254px !important;
+}
+.bgPrimary{
+    background-color: $primary;
+    border-radius: 2px;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+.bgSecond{
+    background-color: #c1d3c0;
+    border-radius: 2px;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+.logo-icon-name-wrapper.carrier-comparisionImg{
+    .profileimgWrap {
+        max-height: 30px !important;
+        max-width: 90px !important;
+    }
+}
+
+

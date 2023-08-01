@@ -1,0 +1,65 @@
+@import "../../config/variable.scss";
+
+.decarb-wrapper {
+    .export {
+        font-size: 14px;
+        color: $primary;
+    }
+
+    .highest-priority {
+        background-color: $primary;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .inner-data-region {
+        border: 1px solid $warning;
+        cursor: pointer;
+
+        .id-data {
+            h4 {
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .priority-btn-wrap {
+            position: relative;
+
+            .priority-btn {
+                position: absolute;
+                top: -14px;
+                left: 6%;
+
+                button {
+                    background-color: $primary;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 0px;
+                    border: $primary;
+                }
+            }
+        }
+
+        .quartely-wrapper {
+            border-top: 1px solid $warning;
+
+            .quartely {
+                h4 {
+                    font-size: 16px;
+                    color: #215154;
+                    height: 38px;
+                    margin-bottom: 0px !important;
+                }
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.c-p {
+    cursor: auto !important;
+}

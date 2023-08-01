@@ -1,0 +1,604 @@
+@import "../../config/variable.scss";
+.insight_top_wrapper{
+    background: #fff;
+    
+}
+
+.main-section {
+    .close-sidebar {
+        width: 6% !important;
+        z-index: 9;
+        @media (max-width: 1200px) {
+            width: 8% !important;
+            z-index: 9;
+        }
+        @media (max-width: 992px) {
+            width: 88px !important;
+            z-index: 9;
+        }
+        @media (max-width: 767px) {
+            width: 80% !important;
+            z-index: 9;
+            background-color: #fff;
+        }
+        .sublinks{
+            padding: 0 5px !important;
+            .nav{
+                left: 100%;
+                padding: 10px;
+                top: 168px;
+                li{
+                    a{
+                        margin-bottom: 10px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    position: unset;
+                }
+            }
+            
+        }
+        .sublinks-1{
+            .nav{
+                // position: absolute;
+                left: 100%;
+                // background: $primary;
+                // width: 150px;
+                padding: 10px;
+                top: 47px;
+                // box-shadow:3px 5px 10px 0 rgba(154, 161, 171, 0.2);
+                li{
+                    a{
+                        margin-bottom: 10px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    position: unset;
+                }
+            }
+        }
+        .collapse-txt {
+            display: none !important;
+            top: 83px;
+            @media (max-width: 768px) {
+              display: block !important;
+            }
+        }
+        .accordion-body {
+            padding: 0px 5px !important;
+        }
+        .accordion-button::after {
+            right: 23px!important;
+            @media (max-width: 1400px){
+                right: 9px !important;
+            }
+        }
+        .another-accordian .accordion-button::after {
+            right: 2px !important;
+            @media (max-width: 1400px){
+                right: -14px !important;
+            }
+        }
+        
+        .nav{
+            .nav-item{
+                a{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    .sidebar.close-sidebar{
+        display: block;
+        border-radius: 0px 22px 22px 0px;
+        @media (max-width: 992px) {
+            width: 88px !important;
+            z-index: 9;
+        }
+        @media (max-width: 768px) {
+            width: 204px !important;
+            z-index: 9;
+        }
+        .logo{
+            .logoNew{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .tooglenew{
+                img{
+                    width: 13px;
+                }
+            }
+        }
+        .nav{
+            .nav-item{
+                .sidebarName{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        margin-top: -30px;
+                        transform: rotate(90deg) scale(1.04);
+                        background-size: 100%;
+                        background-image: url("../../assets/images/topCorner.svg");
+                        position: absolute;
+                        top: 0;
+                        right: 20px;
+                        margin-right: -1.25rem;
+                      
+                    }
+                
+                    &::after{
+                        z-index: 9;
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 50px;
+                        transform: scale(1.04);
+                        background-size: 100%;
+                        background-image: url("../../assets/images/topCorner.svg");
+                        position: absolute;
+                        top: -5px;
+                        right: 19.5px;
+                        margin-right: -1.25rem;
+                        
+                    }
+                    h3{
+                        color: #215154;
+                    }
+                    p{
+                        img{
+                            filter: invert(73%) sepia(22%) saturate(942%) hue-rotate(135deg) brightness(89%) contrast(96%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+   .activeclass{
+    h3{
+        font-weight: 600;
+    }
+   }
+    .sidebar {
+        position: fixed;
+        width: 14%;
+        left: 0;
+        height: 100vh;
+        background: #215154;
+        border-radius: 0px 40px 40px 0px;
+        
+        @media (max-width: 1200px) {
+            width: 17% ;
+            z-index: 9;
+        }
+        @media (max-width: 992px) {
+            width: 202px !important;
+        }
+        .nav{
+            .nav-item{
+                .sidebarName{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        margin-top: -30px;
+                        transform: rotate(90deg) scale(1.04);
+                        background-size: 100%;
+                        background-image: url("../../assets/images/topCorner.svg");
+                        position: absolute;
+                        top: 0;
+                        right: 20px;
+                        margin-right: -1.25rem;
+                      
+                    }
+                
+                    &::after{
+                        z-index: 0;
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 50px;
+                        transform: scale(1.04);
+                        background-size: 100%;
+                        background-image: url("../../assets/images/topCorner.svg");
+                        position: absolute;
+                        top: -2px;
+                        right: 19.5px;
+                        margin-right: -1.25rem;
+                        
+                    }
+                    h3{
+                        color: #215154;
+                    }
+                    p{
+                        img{
+                         
+    
+                            filter: invert(73%) sepia(22%) saturate(942%) hue-rotate(135deg) brightness(89%) contrast(96%);
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .nav-item{
+            a{
+                h3{
+                    @media (max-width: 1400px){
+                        font-size: 14px !important;
+                    }
+                }
+            }
+            .accordion-item{
+                .accordion-header{
+                    h3{
+                        @media (max-width: 1400px){
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+           
+        }
+      
+        @media (max-width: 768px){
+                display: none;
+                width: 277px !important;
+            
+        }
+        @media (max-width: 576px) {
+            display: none;
+        }
+        .collapse-txt {
+            display: block;
+        }
+
+        .nav {
+            display: block;
+
+            .nav-item {
+                a {
+                    font-size: 16px;
+                    color: $white;
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px 20px;
+                }
+                .sidebarName{
+                    background-color: #fff;
+                    border-radius: 27px 0 0 27px;
+                    margin-left: 10px;
+                    padding: 12px;
+                    margin-top: 10px;
+                    
+                }
+                .accordian{
+                    .accordion-item {
+                        .accordion-header {
+                            button {
+                                background: $primary;
+                                border: transparent;
+                                color: $white;
+                                border-radius: 0px;
+                                padding: 12px 20px;
+                            }
+                        }
+                    }
+                }
+                
+                .accordion-button{
+                    border-radius: 0px 40px 40px 0px;
+                    color: #fff;
+                   
+
+                }
+
+                .nav-link {
+
+                    h3 {
+                        font-size: 16px;
+                        color: $primary;
+                    }
+                }
+            }
+
+            .current-screen {
+                font-weight: 700;
+               
+            }
+        }
+        .sublinks{
+            padding: 0 1rem;
+            background-color: $primary;
+            .nav-item{
+                h3{
+                    @media (max-width: 1400px){
+                        font-size: 14px !important;
+                    }
+                   
+                    a{
+                        @media (max-width: 1400px){
+                            font-size: 14px !important;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        .support-items {
+            width: 100%;
+            h3{
+                @media (max-width: 1400px){
+                    font-size: 14px !important;
+                }
+               
+                a{
+                    @media (max-width: 1400px){
+                        font-size: 14px !important;
+                    }
+                   
+                }
+            }
+            .nav-item{
+                button{
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+        // .collapse-border {
+        //     border-top: 1px solid $warning;
+        // }
+
+        .accordion-item {
+            border: transparent;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: $primary;
+            box-shadow: none;
+            background-color: #c1d3c0;
+        }
+
+        .accordion-button:focus {
+            z-index: 3;
+            border-color: transparent;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .accordion-button {
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: $primary !important;
+        }
+
+        .accordion-header .accordion-button::after {
+            flex-shrink: 0;
+            margin-left: auto;
+            content: "";
+            background-image: url('../../assets/images/acc-arrow-White.svg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            position: absolute;
+            right: 6px;
+            top: 23px;
+            @media (max-width: 1400px){
+                top: 27px;
+            }
+           
+        }
+
+        .accordion {
+            --bs-accordion-bg: #215154;
+
+            .current-screen {
+                font-weight: 400;
+                padding: 0;
+            }
+        }
+
+        .accordion-header .accordion-button:not(.collapsed)::after {
+            background-image: url('../../assets/images/acc-arrow-White.svg');
+            transform: var(--bs-accordion-btn-icon-transform);
+            right: 12px;
+            top: 10px;
+            @media (max-width: 1400px){
+                top: 14px !important;
+            }
+          
+            
+           
+        }
+        .accordion-header.sidebarName .accordion-button:not(.collapsed)::after {
+            background-image: url('../../assets/images/acc-arrow-green.svg');
+            transform: var(--bs-accordion-btn-icon-transform);
+            top: -7px !important;
+            right: 4px !important;
+        }
+       .accordion-header.sidebarName .accordion-button::after {
+        right: -8px !important;
+        top: 8px;
+        }
+
+        .accordion-header.sidebarName .accordion-button{
+            background-color: #fff !important;
+            padding: 0px !important;
+        }
+        .accordion-collapse.collapse {
+            ul {
+                li {
+                    .acc-current-screen {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .support-items{
+            button{
+                background: $primary;
+                border: $primary;
+                color: #fff;
+            }
+        }
+
+        .accordion-body {
+            padding: 0px 2rem;
+            background-color: $primary;
+        }
+        .nav-item{
+            .accordion {
+                .accordion-item{
+                    .accordion-header.sidebarName{
+                        .accordion-button{
+                            background-color: transparent !important;
+                            padding: 0px !important;
+                        }
+                        .button{
+                            background-color: transparent !important;
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .accordion-header.sidebarName::after {
+            top: -7px !important;
+            right: 19.3px !important;
+        }
+       .accordion-header.sidebarName .accordion-button::after {
+            background-image: url(../../assets/images/acc-arrow-green.svg);
+        }
+    }
+}
+.another-accordian{
+    .accordion{
+        .accordion-item{
+            .accordion-header{
+                button{
+                    padding: 0;
+                }
+                button.collapsed::after{
+                    right: -27px;
+                    top: 7px;
+                }
+            }
+            button:not(.collapsed)::after {
+                top: -6px !important;
+                right: -12px !important;
+            }
+        }
+    }
+}
+
+.fs-14{
+    font-size: 14px !important;
+}
+.sidebar + .dashboard-navbar{
+    .header-wrapper {
+        .header-logo-wrapper{
+            
+            .collapseIcon{
+                display: block;
+            }
+            .buggerIcon{
+                display: none;
+                img{
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+}
+.sidebar.close-sidebar + .dashboard-navbar{
+    .header-wrapper {
+        .header-logo-wrapper{
+           
+            .collapseIcon{
+                display: none;
+            }
+            .buggerIcon{
+                display: block;
+                img{
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.another-accordian{
+    .accordion-header{
+        .accordion-button {
+            padding-top: 0px !important;
+        }
+    }
+}
+// . @media (max-width: 1400px){
+//     padding-top: 23px;
+// }
+.main-section {
+    .sidebar.close-sidebar {
+        .nav .nav-item .accordion-button {
+            border-radius: 0px 40px 40px 0px;
+            color: #fff;
+            @media (max-width: 1400px){
+                padding-top: 23px;
+             }
+        }
+    }
+}
+.main-section .sidebar.close-sidebar .accordion-header .accordion-button::after {
+  @media (max-width: 1400px) {
+    top: 35px;
+  }
+}
+.main-section .sidebar .another-accordian{
+    .accordion{
+        .accordion-item{
+            .accordion-header{
+                button{
+                    padding: 0;
+                }
+                button.collapsed::after{
+                    right: -27px;
+                    top: 7px;
+                }
+            }
+            button:not(.collapsed)::after {
+                top: -6px !important;
+                right: -20px !important;
+            }
+        }
+    }
+}
+.main-section .sidebar.close-sidebar .another-accordian{
+    .accordion{
+        .accordion-item{
+            .accordion-header{
+                button{
+                    padding: 0;
+                }
+                button.collapsed::after{
+                    right: -27px;
+                    top: 7px;
+                }
+            }
+            button:not(.collapsed)::after {
+                top: -6px !important;
+                right: -2px !important;
+            }
+        }
+    }
+}

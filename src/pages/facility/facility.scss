@@ -1,0 +1,163 @@
+@import "../../config/variable.scss";
+.lanes-wrapper{
+.x-axis-hide{
+
+    div{
+        div{
+            svg{
+                g{
+                    
+                    &.highcharts-yaxis-labels{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+.vendor-wrapper .emi-inten .model-overview-down{
+    h6{
+        color: #d8856b !important;
+    }
+}
+.model-overview-down{
+    background-color: #efede9;
+    border-left: 10px solid #d8856b;
+    height: 50px;
+    margin-top: 10px;
+  
+}
+.facility-table{
+    .table-responsive{
+        .table{
+            @media (max-width: 992px){
+                max-width: 800px;
+                width: 800px;
+            }
+        }
+    }
+}
+.vendor-table.facility-table{
+    thead{
+        tr{
+            display: block;
+            position: relative;
+            th{
+                &:nth-child(1){
+                    min-width: 290px;
+                    @media (max-width: 1600px) {
+                        min-width: 240px;
+                    }
+                    @media (max-width: 1400px) {
+                        min-width: 240px;
+                    }
+                }
+                &:nth-child(2){
+                    min-width: 200px;
+                    @media (max-width: 1600px) {
+                        min-width: 200px;
+                    }
+                    @media (max-width: 1400px) {
+                        min-width: 160px;
+                    }
+                }
+                &:nth-child(3){
+                    min-width: 170px;
+                    @media (max-width: 1400px) {
+                        min-width: 135px;
+                    }
+                }
+                &:nth-child(4){
+                    min-width: 140px;
+                    @media (max-width: 1400px) {
+                        min-width: 150px;
+                    }
+                }
+                &:nth-child(5){
+                    min-width: 104px;
+                    @media (max-width: 1600px) {
+                        min-width: 104px;
+                    }
+                    @media (max-width: 1400px) {
+                        min-width: 80px;
+                    }
+                }
+            }
+        }
+    }
+    tbody{
+        display: block;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100%;
+        height: 421px !important;
+        tr{
+            td{
+                &:nth-child(1){
+                    min-width: 290px;
+                    @media (max-width: 1600px) {
+                        min-width: 240px;
+                    }
+                    @media (max-width: 1400px) {
+                        min-width: 240px;
+                    }
+                }
+                &:nth-child(2){
+                    min-width: 200px;
+                    @media (max-width: 1600px) {
+                        min-width: 200px;
+                    }
+                    @media (max-width: 1400px) {
+                        min-width: 160px;
+                    }
+                }
+                &:nth-child(3){
+                    min-width: 170px;
+                    @media (max-width: 1400px) {
+                        min-width: 135px;
+                    }
+                }
+                &:nth-child(4){
+                    min-width: 140px;
+                    @media (max-width: 1400px) {
+                        min-width: 150px;
+                    }
+                }
+                &:nth-child(5){
+                    min-width: 104px;
+                    @media (max-width: 1600px) {
+                        min-width: 104px;
+                    }
+                    @media (max-width: 1400px) {
+                        min-width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+.region-namevalues.facility-names{
+    float: left;
+    width: 60px ;
+    font-size: 11px;
+    margin-top: 29px;
+}
+.region-namevalues.facility-names h6 {
+    font-size: 9px;
+    margin-bottom: 2px;
+    height: 37.5px;
+}
+table{
+    tbody{
+        tr{
+            &:hover{
+                background: rgba(193, 211, 192, 0.4);
+            }
+        }
+    }
+}
+
+.highcharts-container, .highcharts-root{
+    width: 100% !important;
+}

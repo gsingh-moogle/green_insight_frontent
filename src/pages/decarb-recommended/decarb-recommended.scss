@@ -1,0 +1,981 @@
+@import "../../config/variable.scss";
+
+.decarb-rcmd-wrapper {
+    .heading {
+        h6 {
+            font-size: 12px;
+            color: #5f9a80;
+        }
+    }
+
+    .fs-12 {
+        font-size: 12px;
+    }
+
+
+    .lane-data {
+        .lane-data-wrapper {
+            .modal-shift{
+                .table-responsive{
+                    .table{
+                        tbody{
+                            tr {
+                                vertical-align: middle;
+                                td{
+                                    h6{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                &:last-child{
+                                    border-bottom: transparent;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .decarb-rcmd {
+                border-right: 1px solid $success;
+
+                h6 {
+                    font-size: 12px;
+                    color: $primary;
+                }
+
+                a {
+                    color: #dddd;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .up-img {
+        img {
+            width: 30px;
+        }
+    }
+
+    
+
+    .table-responsive .table thead tr {
+        background-color: rgba(237, 237, 246, 0.4);
+        border: transparent;
+    }
+
+    .table-responsive .table thead tr th {
+        font-size: 14px;
+        color: #215154;
+        vertical-align: baseline;
+    }
+
+    .table-responsive .table tbody tr td h6 {
+        color: #215154;
+        font-size: 14px;
+    }
+
+    .river-list {
+        h4 {
+            font-size: 15px;
+            color: $primary;
+        }
+
+        .location-line {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 23px;
+                top: 21px;
+                left: 8px;
+                background-color: $primary;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+
+            }
+
+        }
+    }
+
+
+    .modal-shift .table-responsive .table thead tr th h6 {
+        font-size: 10px;
+    }
+
+    td {
+        color: #215154;
+        font-size: 14px;
+    }
+
+    .shipment-dtl {
+        margin-top: 6rem;
+
+        .shipment-txt {
+            h5 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+                color: $gray-200;
+            }
+
+            .under-line {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    background-color: $dark;
+                    width: 50px;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .modal-shift {
+        border: 1px solid $warning;
+
+        h3 {
+            font-size: 24px;
+            color: $primary;
+            text-transform: capitalize;
+        }
+
+        .grey-less {
+            background-color: #dcdcdc;
+
+            h6 {
+                span {
+                    img {
+                        width: 18px;
+                    }
+                }
+
+                color: $primary;
+                font-size: 14px;
+            }
+
+            h5 {
+                font-size: 16px;
+                color: $gray-200;
+            }
+
+            h4 {
+                color: $gray-200;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .line-end {
+                border-right: 1px solid $gray-200;
+
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: $gray-200;
+        }
+    }
+
+    .customize {
+        button {
+            background-color: $primary;
+            border: $primary;
+            border-radius: 0px;
+        }
+
+        .cancel-btn {
+            color: $gray-200;
+            text-decoration: underline;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        .reset-btn {
+            border: 1px solid $primary;
+            border-radius: 0px;
+            background-color: transparent;
+            color: $primary;
+        }
+    }
+
+    .lever-slctd {
+        background-color: $info;
+
+        h3 {
+            font-size: 14px;
+            color: $gray-200;
+        }
+
+        button {
+            border-radius: 0;
+            width: 230px;
+        }
+
+        .create-project {
+            background-color: $gray-200;
+            border: $gray-200;
+        }
+
+        .existing-project {
+            background-color: transparent;
+            border: 1px solid $gray-200;
+            color: $gray-200;
+
+        }
+
+        .cancel-btn {
+            color: $gray-200;
+            text-decoration: underline;
+            background-color: transparent;
+            border: transparent;
+        }
+
+    }
+
+    .priority-btn-wrap {
+        position: relative;
+
+        .priority-btn {
+            position: absolute;
+            top: -32px;
+            left: 0%;
+
+            button {
+                background-color: $primary;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 0px;
+                border: $primary;
+            }
+        }
+    }
+
+    .priority-btn-decarb {
+        position: absolute;
+        top: -49px !important;
+        left: 0%;
+    }
+
+    .no-lever {
+        h4 {
+            font-size: 16px;
+            color: $gray-200;
+        }
+    }
+
+    .selected-modal-lever-wrap {
+        background-color: $white;
+
+        .selected-modal-outer {
+            border: 1px solid $dark;
+
+            .selected-modal-heading {
+                border-bottom: 1px solid $dark;
+
+                h4 {
+                    font-size: 24px;
+                    color: $primary;
+                }
+            }
+
+            .selected-modal-innerdata {
+                h5 {
+                    font-size: 16px;
+                    color: $dark;
+                }
+
+                .selected-item {
+                    border: 1px solid $dark;
+                    display: inline-block;
+
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .links {
+                .reset {
+                    color: $primary;
+
+                    a {
+                        font-size: 16px;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// range slider
+#price-calculator {
+    margin: 0.7em 0 0.7em 0;
+}
+.range-slider{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    #price-calculator{
+        :focus-visible {
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+    }
+}
+
+#price-calculator form {
+    max-width: 600px;
+}
+
+#price-calculator fieldset {
+    border: none;
+    background: transparent;
+    padding: 1em;
+    margin: 0;
+    border-radius: 0.25em;
+    text-align: left;
+    width: 100%;
+}
+
+#price-calculator.rangeslider {
+    background: #e7eaf0;
+}
+
+#price-calculator .range-slider {
+    margin: 0 0 0 0;
+}
+
+#price-calculator .output,
+#price-calculator .output--seats,
+#price-calculator .output--lisence-cost {
+    /*text-align:center;*/
+    margin: 0 auto;
+    font-size: 2em;
+    display: block;
+    width: auto;
+    // margin: 0.5em 0 0 0;
+    clear: both;
+}
+
+#price-calculator .output--discount {
+    color: #ffbc02;
+}
+
+// #price-calculator .range-slider {
+//     width: 100%;
+// }
+
+#price-calculator .range-slider__range {
+    width: calc(100% - (73px));
+    height: 10px;
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+#price-calculator .range-slider__range::-webkit-slider-thumb {
+
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $gray-100;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+
+#price-calculator .range-slider__range::-webkit-slider-thumb:hover {
+    background: $gray-100;
+}
+
+#price-calculator .range-slider__range:active::-webkit-slider-thumb {
+    background: $gray-100;
+}
+
+#price-calculator .range-slider__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: $gray-100;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+
+#price-calculator .range-slider__range::-moz-range-thumb:hover {
+    background: $gray-100;
+}
+
+#price-calculator .range-slider__range:active::-moz-range-thumb {
+    background: $gray-100;
+}
+
+#price-calculator .range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: $gray-100;
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+
+#price-calculator .range-slider__value:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid $gray-100;
+    border-bottom: 7px solid transparent;
+    content: '';
+}
+
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
+}
+
+#price-calculator .rangeslider__handle {
+    border-radius: 22px;
+    min-width: 62px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#price-calculator .rangeslider__handle:after {
+    background: 0;
+}
+
+.rangeslider__fill {
+    background: $primary;
+    position: absolute;
+}
+
+#price-calculator label {
+    display: inline-block;
+    padding: 0 0 0 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#price-calculator input[type="checkbox"],
+#price-calculator input[type="radio"] {
+    margin: 4px 0 0 0;
+    padding: 0 0 0 0;
+    line-height: 0;
+    height: 0;
+    // float: left;
+    display: inline-block;
+}
+
+#price-calculator label span {
+    float: left;
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+#price-calculator small {
+    font-size: 9px;
+}
+
+#ultra input[type="radio"] {
+    display: none;
+}
+
+#ultra label {
+    display: inline-block;
+    background-color: #00a1da;
+    color: #f8f9fb;
+    padding: 0.5em 1.5em;
+    /* font-family:Arial; */
+    font-size: 16px;
+    margin-right: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: 600;
+    /* border: 1px solid #18374f; */
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+// #ultra label:last-item {
+//     margin-right: 0em;
+// }
+
+#ultra label:hover {
+    /*opacity:0.8;*/
+    background-color: #ffbc02;
+    color: #fff;
+}
+
+#ultra input[type="radio"]:checked+label {
+    background-color: #18374f;
+    color: #fff;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #ultra label {
+        width: auto;
+        margin-bottom: 0em;
+    }
+}
+
+.output--seats {
+    display: none;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+#discount-cost {
+    background: #18374f;
+    color: white;
+}
+
+// range
+
+// modal create project css
+.create-project-modal.modal-dialog {
+    max-width: calc(100% - 550px);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: 1200px) {
+        max-width: calc(100% - 80px) !important;
+    }
+
+    .modal-content {
+        background-color: #dcdcdc;
+        border-radius: 4px;
+
+        .modal-header {
+            border-bottom: none;
+
+            .modal-title {
+                font-size: 30px;
+                color: $primary;
+                width: 100%;
+
+                a {
+                    font-size: 14px;
+                    color: $dark;
+                }
+
+            }
+        }
+
+        .modal-body {
+            h5 {
+                color: $dark;
+                font-size: 20px;
+            }
+
+            .create-project-body {
+                border: 1px solid $gray-200;
+                background-color: $white;
+
+                .heading {
+                    h6 {
+                        font-size: 14px;
+                        color: #5f9a80;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                        color: $primary;
+                    }
+
+                }
+            }
+
+            .invite-people-wrapper {
+                background-color: #dcdcdc;
+
+                h5 {
+                    font-size: 20px;
+                    color: $primary;
+                }
+
+                .invite-people-name {
+                    h3 {
+                        font-size: 20px;
+                        color: $primary;
+                    }
+
+                    .letter-icon {
+                        img {
+                            width: 30px;
+                        }
+                    }
+
+                    img {
+                        width: 15px;
+                    }
+
+                    a {
+                        color: $primary;
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+
+                    .form-select {
+                        color: $primary;
+                        background-color: transparent;
+                        border: transparent;
+                        border-radius: 0rem;
+                        width: 116px;
+                    }
+                }
+
+                .add-btn {
+                    button {
+                        background-color: $primary;
+                        border: $primary;
+                        border-radius: 0px;
+                    }
+                }
+            }
+
+            .intermodal-wrapper {
+                // border-top: 1px solid #dcdcdc;
+
+                h3 {
+                    color: $primary;
+
+                    span {
+                        img {
+                            width: 20px;
+                        }
+                    }
+                }
+
+                a {
+                    color: #212925;
+                }
+
+                .lane-data {
+                    border: 1px solid #c1d3c0;
+                    background-color: #efede9;
+                    border-left: 14px solid #c1d3c0;
+                }
+
+                .river-list {
+                    h4 {
+                        font-size: 20px;
+                        color: $primary;
+                    }
+
+                    .location-line {
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 1px;
+                            height: 23px;
+                            top: 27px;
+                            left: 8px;
+                            background-color: $primary;
+                        }
+
+                    }
+                }
+
+                .shipment-dtl {
+                    margin-top: 6rem;
+
+                    .shipment-txt {
+                        h5 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            color: $gray-200;
+                        }
+
+                        span {
+                            font-size: 12px;
+                        }
+
+                        .under-line {
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                background-color: $dark;
+                                width: 110px;
+                                height: 1px;
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .decarb-rcmd {
+                    border-right: 1px solid $primary;
+
+                    h6 {
+                        font-size: 14px;
+                        color: $primary;
+                    }
+
+                    a {
+                        color: $primary;
+                    }
+                }
+
+            }
+
+            .intermodal-vendor-data {
+                h5 {
+                    color: $primary;
+                }
+
+            }
+
+            // .project-desc {
+            //     border-top: 1px solid #dcdcdc;
+            // }
+
+        }
+
+
+        .lanes-overall-wrap {
+            .lanes-overall {
+                h4 {
+                    font-size: 16px;
+                }
+
+                p {
+                    color: #464a4b;
+                    font-size: 14px;
+                }
+
+                h6 {
+                    color: $primary;
+                    font-size: 14px;
+                }
+            }
+
+            .progress {
+                --bs-progress-bg: #fff;
+                --bs-progress-bar-bg: #5f9a80;
+            }
+        }
+
+        .form-check-input[type=checkbox] {
+            border-radius: 0em;
+        }
+
+        .modal-footer {
+            border-top: none;
+
+            button {
+                background-color: $primary;
+                border: $primary;
+                border-radius: 0;
+            }
+        }
+
+        .form-control {
+            font-weight: 700;
+            color: $dark;
+            border-radius: 0;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            color: $dark;
+            border: 1px solid #ced4da;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .form-select {
+            color: $primary;
+            font-weight: 500;
+            border-radius: 0rem;
+        }
+
+        .select-input-wrap {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            margin-bottom: 0 !important;
+
+            @media (max-width: 768px) {
+                position: unset;
+            }
+        }
+
+        .input-email {
+            margin-bottom: 0px !important;
+        }
+
+    }
+
+}
+
+.save-create-modal {
+    // width: calc(100% - 876px);
+    background-color: $white;
+    margin: 20px auto;
+
+    @media (max-width: 992px) {
+        width: 90%;
+    }
+
+    @media (max-width: 1200px) {
+        width: 70%;
+    }
+
+    @media (max-width: 1400px) {
+        width: 93%;
+    }
+
+    .heading {
+        h3 {
+            color: $primary;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .experience {
+        background-color: $primary;
+    }
+
+    .feedback-btn {
+        button {
+            background-color: $primary;
+            border-color: $primary;
+            border-radius: 0px;
+
+        }
+    }
+}
+.map-ledgend{
+    padding: 10px;
+    background: #fff;
+    max-width: 231.8px;
+    border: 1px solid #c1d3c0;
+    margin-bottom: 11px;
+    margin-left: auto;
+}
+
+
+.progress {
+    background-color: #d8d8d8;
+}
+
+.m-cursor {
+    cursor: pointer
+}
+
+#range {
+    // -webkit-appearance: none;
+    width: 100%;
+}
+
+.line-h-100 {
+    height: 65px;
+}
+.btn-enroutes{
+    p{
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: #fff;
+        border-radius: 0px;
+       
+        &:hover{
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #fff;
+            border-radius: 0px;
+        }
+    }
+    p{
+        img{
+            margin-top: 10px;
+            cursor: pointer;    
+        }
+        .expand-img{
+            margin-left: -40px;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 10px;
+            position: relative;
+            z-index: 99;
+        }
+    }
+    button{
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: #fff;
+        border-radius: 4px;
+       
+        &:hover{
+            background-color: $primary;
+            border: 1px solid $primary;
+            color: #fff;
+            border-radius: 4px;
+        }
+    }
+  
+}
+.btn-enroutes p div div:nth-child(1) {
+    width: 340px !important;
+    height: 150px !important;
+    border-radius: 10px;
+}
+.btn-enroutes .gm-control-active.gm-fullscreen-control{
+    display: none !important;
+}
+.table-active{
+    background-color: rgba(193, 211, 192, 0.9);
+}
+.more-emission{
+    .emission-box{
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        background-color: rgba(193, 211, 192, 0.9) ;
+    }
+}

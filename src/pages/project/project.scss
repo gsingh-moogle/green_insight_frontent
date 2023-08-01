@@ -1,0 +1,154 @@
+@import "../../config/variable.scss";
+
+.project-wrap {
+    .highest-priority {
+        background-color: #5f9a80;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .need-action {
+        background-color: $danger;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .quartely {
+        h5 {
+            color: $primary;
+        }
+
+    }
+
+    .delete-div {
+        max-width: 400px;
+        background-color: white;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+
+
+    .total-projects-shown {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        background-color: #dcdcdc;
+        border-radius: 50%;
+    }
+
+    .pacific-overview {
+        a {
+            color: #464a4b;
+            font-size: 14px;
+        }
+    }
+
+    .inner-data-region .priority-btn-wrap .priority-btn {
+        position: absolute;
+        top: -14px;
+        left: 3%;
+    }
+
+    .fs-14 {
+        font-size: 14px !important;
+        color: $primary !important;
+    }
+
+    .a-btn {
+        background-color: transparent;
+        border: 1px solid $primary;
+        color: $primary !important;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .search-icon-img img {
+        position: absolute;
+        left: 8px;
+        top: 11px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .project-search-dropdown {
+        .css-1nmdiq5-menu {
+            padding-left: 0px !important;
+        }
+        .css-1n6sfyn-MenuList {
+            padding-left: 0px !important;
+        }
+        div{
+            font-size: 14px;
+            color: $primary;
+            padding-left: 9px;
+        }
+        .css-13cymwt-control, .css-t3ipsp-control {
+            width: 386px;
+            border-radius: 4px;
+            height: 38px;
+            min-height: 38px;
+    
+            .css-1fdsijx-ValueContainer {
+                font-size: 14px;
+    
+                .css-1jqq78o-placeholder {
+                    color: $primary;
+                    font-weight: 400;
+                }
+            }
+    
+            .css-1dimb5e-singleValue {
+                color: $primary;
+                font-weight: 400;
+            }
+        }
+    
+    }
+
+    .text-circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid $primary;
+
+        h5 {
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}
+
+.delete-btn {
+    background-color: $danger !important;
+    color: $white !important;
+    border: transparent !important;
+}
+
+.cancel-btn {
+    background-color: #dcdcdc !important;
+    color: $primary !important;
+    border: transparent !important;
+}
+
+.h-emissions {
+    font-size: 14px !important;
+}
+
+.modal-footer {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+    background-color: var(--bs-modal-footer-bg);
+    border-top: transparent;
+    border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+    border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+}
+
+.m-cursor {
+    cursor: pointer
+}

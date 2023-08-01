@@ -1,0 +1,67 @@
+trigger:
+- production
+
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:  
+  - job: Build
+    displayName: Build
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '16.x'
+      displayName: 'Install Node.js'
+    - script: |
+        npm install
+        npm run build --if-present
+        
+      displayName: 'npm install, build and test'
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/greensight.zip
+        replaceExistingArchive: true
+    - upload: $(Build.ArtifactStagingDirectory)/greensight.zip
+      artifact: drop
+    
+
+- stage: Deploy
+  displayName: Deploy stage
+  jobs:
+  - deployment: VMDeploy
+    displayName: Web deploy
+    environment:
+      name: prodvm
+      resourceType: VirtualMachine
+    strategy:
+      rolling:
+        maxParallel: 2  #for percentages, mention as x%
+
+        deploy:
+          steps:
+          - download: current
+            artifact: drop
+          
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                # Modify deployment script based on the app type
+                echo "Starting deployment script run"
+                cd /home/azureuser/green-sight-frontend
+                sudo rm -rf *
+                sudo rm -rf .git/
+                sudo rm -rf .env
+                sudo rm -rf .gitignore
+                sudo unzip /home/azureuser/azagent/_work/1/drop/greensight.zip -d /home/azureuser/green-sight-frontend
+                
+                sudo rm -rf /var/www/html/*
+                sudo cp -r /home/azureuser/green-sight-frontend/build/* /var/www/html/

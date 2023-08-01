@@ -1,0 +1,90 @@
+
+@import "../../config/variable.scss";
+.lane-wrapper{
+    .contri-txt{
+        color: #464a4b !important;
+    }
+    .emi-inten{
+        button{
+            font-size: 12px;
+            border-radius: 0;
+            background-color: $success;
+            border: $primary;
+            white-space: nowrap;
+        }
+    }
+    .lane-data{
+        border: 1px solid $warning;
+        background-color: #efede9;
+        border-left: 14px solid $warning;
+        .emission{
+            h4{
+                font-size: 24px;
+                color:$primary;
+            }
+            h6{
+                font-size: 12px;
+                color: #464a4b;
+            }
+            h3{
+                font-size: 24px;
+                color:$primary;
+            }
+        }
+    }
+    .grey-div{
+        border-radius: 2px;
+    }
+    .round-2{
+        border-radius: 2px !important;
+    }
+    .table-region {
+         margin-top: 1rem; 
+    }
+    .quartely-wrapper{
+        border-top: 1px solid $warning;
+        .quartely{
+            color: $primary;
+            h4{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 22px;
+                span{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+.slider-icons {
+    .left-arrow-slider {
+        position: absolute;
+        left: 0px;
+        top: 39%;
+
+        button {
+            border: transparent;
+            background-color: transparent;
+        }
+    }
+
+    .right-arrow-slider {
+        position: absolute;
+        right: 0px;
+        top: 39%;
+
+        button {
+            border: transparent;
+            background-color: transparent;
+        }
+    }
+}
+
+.lanesoverview-avg-img-txt{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 150px;
+}

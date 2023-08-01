@@ -1,0 +1,254 @@
+@import "../../config/variable.scss";
+
+.lanes-wrapper {
+    .lanes-data-wrap {
+        border-radius: 20px;
+        background-color: rgba(237, 237, 246, 0.4);
+    }
+    .lane-pagination {
+        .pagination{
+            .page-item{
+                .page-link{
+                    color: $primary
+                }
+            }
+        }
+    }
+
+    .toggle-switch {
+        .form-switch {
+            padding-left: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .form-switch .form-check-input:checked {
+            margin-top: 0px;
+        }
+    }
+
+    .img-Size {
+        height: 30px;
+    }
+
+    .lanes-data {
+        .lane-breakdown {
+            ul {
+                margin-bottom: 0 !important;
+            }
+
+            .tab-content {
+                background-color: rgba(237, 237, 246, 0.4);
+                padding: 7px 16px;
+                border: 1px solid #dee2e6;
+                border-top: transparent;
+
+                .accordion {
+                    .accordion-item {
+                        .accordion-collapse {
+                            .accordion-body {
+                                .table-responsive {
+                                    padding: 16px 17px;
+
+                                    .table {
+                                        thead {
+                                            tr {
+                                                th:nth-child(1) {
+                                                    width: 25%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .accordion-button {
+                            &.collapsed {
+                                .table-responsive {
+                                    .table {
+                                        .table-show {
+                                            display: none !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .accordion-header {
+                            .accordion-button {
+                                padding: 16px 17px;
+                                border-radius: 0px;
+                                background-color: rgba(237, 237, 246, 0.8) !important;
+
+                                .table-responsive {
+                                    .table {
+                                        tbody {
+                                            tr {
+                                                border-bottom: transparent;
+                                                &:hover{
+                                                    background-color: rgba(237, 237, 246, 0.1) !important;
+                                                }
+                                                td {
+                                                    padding: 1rem 0.5rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body{
+                                background-color: rgba(237, 237, 246, 0.8) !important;
+                            }
+                        }
+                    }
+                }
+
+                .table-responsive {
+                    .table {
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 14px;
+                                    color: $primary;
+                                    vertical-align: baseline;
+
+                                    h6 {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                border-bottom: 1px solid #c1d3c0;
+                                td {
+                                    color: $primary;
+                                    font-size: 12px;
+                                    padding: 1rem 0.5rem;
+                                   
+                                    
+                                    a {
+                                        color: $primary;
+                                        text-decoration: none;
+                                    }
+                                }
+                                &:last-child{
+                                    border-bottom: 1px solid transparent;
+                                }
+                            }
+                        }
+                    }
+
+                    .empty-img {
+                        padding: 0px 11px;
+                    }
+                }
+            }
+
+            .emi-inten {
+                h6 {
+                    font-size: 14px;
+                    color: $success;
+                }
+
+                h4 {
+                    font-size: 24px;
+                    color: $primary;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    color: $dark;
+                }
+            }
+
+            .more-lanes {
+                a {
+                    color: $dark;
+                }
+
+                font-size: 14px;
+            }
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link.active {
+                color: $white;
+                font-weight: 700;
+                border-radius: 0;
+                background-color: $primary;
+                border-color: var(--bs-nav-tabs-link-active-border-color);
+            }
+
+            .nav-link {
+                font-size: 14px;
+                color: #215154;
+                padding: 5px 10px
+            }
+
+            .nav-link:focus,
+            .nav-link:hover {
+                color: $primary;
+            }
+        }
+    }
+    .lanes-table{
+        max-width: 824px;
+        overflow-x: scroll;
+        width: 775px;
+    }
+    .accordion-item:first-of-type {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top: 0;
+    }
+
+    .accordion-button {
+        color: $primary;
+        background-color: $white;
+        border-top: 1px solid #dee2e6;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .accordion-item:last-of-type .accordion-button.collapsed {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: #dee2e6;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .x-axis-hide {
+
+        div {
+            div {
+                svg {
+                    g {
+                        &.highcharts-xaxis {
+                            display: none !important;
+                        }
+
+                        &.highcharts-yaxis-labels {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.table-responsive{
+    width: 100%;
+}
+// .avg-imgLanes .highcharts-root{
+//     width: 550px;
+// }

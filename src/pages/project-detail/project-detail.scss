@@ -1,0 +1,248 @@
+@import "../../config/variable.scss";
+
+.project-detail-wrap {
+    .pacific-overview a {
+        color: #464a4b;
+        font-size: 14px;
+    }
+
+    .track-btn-lightgreen button {
+        background-color: #5f9a80 !important;
+        border: #5f9a80;
+        font-size: 12px;
+        border-radius: 0;
+    }
+
+    .emission {
+        h5 {
+            color: $primary;
+        }
+    }
+
+    .accordion {
+        .accordion-item {
+            .accordion-collapse {
+                .accordion-body {
+                    .table-responsive {
+
+
+                        .table {
+                            thead {
+                                tr {
+                                    th:nth-child(1) {
+                                        width: 25%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .accordion-button {
+                &.collapsed {
+                    .table-responsive {
+                        .table {
+                            .table-show {
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .accordion-header {
+                color: $primary;
+
+                h5 {
+                    font-size: 16px;
+                    color: $primary;
+                    // width: 190px;
+                }
+
+                .accordion-button {
+                    padding: 16px 17px;
+                    background-color: rgba(237, 237, 246, 0.4);
+
+                    .table-responsive {
+                        .table {
+                            tbody {
+                                tr {
+                                    td:nth-child(2) {
+                                        width: 136.8px;
+                                        text-decoration: none;
+                                    }
+
+                                    td:nth-child(3) {
+                                        width: 140px;
+                                    }
+
+                                    td:nth-child(4) {
+                                        width: 107px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .table-responsive {
+        .table {
+            thead {
+                tr {
+                    background-color: rgba(237, 237, 246, 0.1);
+                    border: transparent;
+                    border-bottom: 1px solid #c1d3c0;
+
+                    th {
+                        font-size: 14px;
+                        color: $primary;
+                        vertical-align: baseline;
+
+                        h6 {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border: transparent;
+                    border-bottom: 1px solid $info;
+                    vertical-align: middle;
+
+                    td {
+                        color: $primary;
+                        font-size: 14px;
+                        padding: 19px 15px;
+
+                        a {
+                            color: $primary;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                tr:last-child {
+                    border-bottom: transparent;
+                }
+            }
+        }
+
+
+        .empty-img {
+            padding: 0px 11px;
+        }
+    }
+
+    .track-btn-green button {
+        background-color: #c1d3c0;
+        border: #c1d3c0;
+        font-size: 12px;
+        color: $dark;
+        border-radius: 0;
+    }
+
+    .maps-subs {
+        border-radius: 20px;
+        background-color: rgba(237, 237, 246, 0.4);
+
+        h6 {
+            font-size: 12px;
+            color: #215154;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #215154;
+        }
+
+        button {
+            background-color: $primary;
+            border: $primary;
+        }
+    }
+
+    .btn-outline-project {
+        button {
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    .model-overview-down {
+        background-color: #efede9;
+        border-left: 10px solid #d8856b;
+        height: 70px;
+        margin-top: 10px;
+
+        h5 {
+            font-size: 16px;
+            color: #d8856b;
+        }
+    }
+
+    .model-overview-up {
+        background-color: #c1d3c0;
+        border-left: 10px solid $primary;
+        height: 70px;
+        margin-top: 10px;
+
+        @media (max-width: 768px) {
+            height: 100px;
+        }
+
+        h5 {
+            font-size: 16px;
+            color: $primary;
+        }
+    }
+
+    .action-progress {
+        h3 {
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(237, 237, 246, 0.4) !important;
+}
+
+.accordion {
+    --bs-accordion-active-bg: #fff !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.up-img {
+    img {
+        width: 30px;
+    }
+}
+
+.sch-img {
+    img {
+        max-width: 83px;
+        max-height: 28px;
+    }
+}
+.wrapperUnit{
+    @media (max-width: 1366px){
+        min-height: 29px;
+    }
+}

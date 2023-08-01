@@ -1,0 +1,50 @@
+@import "../../config/variable.scss";
+.custom-accordian{
+    .accordian-header{
+        padding: 10px;
+        background: rgb(193 211 192 / 53%);
+        cursor: pointer;
+        div{
+            color: $primary;
+            font-weight: 600;
+        }
+        .sign{
+            background: $white;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+.fs-10{
+    font-size: 10px;
+}
+.margin-b{
+    margin-bottom: 4rem;
+    @media (max-width:992px){
+        margin-bottom: 10px;
+    }
+}
+.modalOverviewGraph{
+    .highcharts-credits{
+        display: none;
+    }
+    .truckloadBox{
+        width: 15px;
+        height: 15px;
+        border-radius: 1px;
+        background-color: $primary;
+    }
+    .intermodalBox{
+        width: 15px;
+        height: 15px;
+        border-radius: 1px;
+        background-color: #5f9a80;
+    }
+}
+.yearDropdown{
+    width: 83px !important;
+}

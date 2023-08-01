@@ -1,0 +1,17 @@
+@import "../../config/variable.scss";
+
+.error-page-wrap{
+    .h-100vh{
+        min-height: 100vh;
+    }
+    .error-inner{
+        background-color: $primary;
+        min-height: 650px;
+        .btn-lightGreen{
+            background-color: #c1d3c0;
+            border: 1px solid #c1d3c0;
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}
